@@ -1,0 +1,10 @@
+# Project files
+###############
+project*
+lib/*
+
+# Logs and databases #
+######################
+
+## Compiled source #
+####################
