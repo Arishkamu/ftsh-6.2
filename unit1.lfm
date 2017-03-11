@@ -1,11 +1,12 @@
 object Form1: TForm1
-  Left = 318
-  Height = 305
-  Top = 114
+  Left = 316
+  Height = 320
+  Top = 115
   Width = 406
   Caption = 'Form1'
-  ClientHeight = 305
+  ClientHeight = 320
   ClientWidth = 406
+  OnCreate = FormCreate
   LCLVersion = '1.6.0.4'
   object Image1: TImage
     Left = 0
@@ -14,6 +15,8 @@ object Form1: TForm1
     Width = 406
     OnClick = Image1Click
     OnMouseDown = Image1MouseDown
+    OnMouseEnter = Image1MouseEnter
+    OnMouseUp = Image1MouseUp
   end
   object Button1: TButton
     Left = -8
@@ -21,6 +24,13 @@ object Form1: TForm1
     Top = 280
     Width = 414
     Caption = 'Button1'
+    OnClick = Button1Click
     TabOrder = 0
+  end
+  object Timer1: TTimer
+    Interval = 5
+    OnTimer = Timer1Timer
+    left = 10
+    top = 10
   end
 end
